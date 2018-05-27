@@ -4,6 +4,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import YouTube from "react-native-youtube";
 import type { DefaultPageProps } from "../types";
+import { CreateVideo } from "../api/YoutubeService";
 
 type Props = {} & DefaultPageProps;
 type State = {
@@ -37,13 +38,12 @@ export default class VideoScreen extends React.Component<Props, State> {
 
   render() {
     return (
-      <View style={{ flexGrow: 1 }}>
-        <YouTube
+      <View style={{  }}>
+        <CreateVideo
           videoId={this.props.navigation.state.params.videoId}
           play={false}
           fullscreen={false}
           loop={false}
-          apiKey={"AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw"}
           onReady={e => this.setState({ isReady: true })}
           onChangeState={({ state }) =>
             this.setState({
@@ -60,7 +60,7 @@ export default class VideoScreen extends React.Component<Props, State> {
               error
             })
           }
-          style={{ alignSelf: "stretch", height: 300 }}
+          style={{ flexGrow: 1, alignSelf: "stretch", height: 300 }}
         />
       </View>
     );

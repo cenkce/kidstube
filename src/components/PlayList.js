@@ -55,9 +55,7 @@ export default class PlayList extends Component<PlayListProps, State> {
           (data: VideoItem) => (
             <PlayListItem
               onPress={e =>
-                this.props.onItemSelect("Video", {
-                  videoId: data.videoId
-                })
+                this.props.onItemSelect(data.videoId)
               }
               image={data.thumbnail}
               title={data.title}
@@ -92,14 +90,19 @@ const PlayListItem = (props: PlayListItemProps) => {
         style={{
           backgroundColor: "white",
           height: props.image.height,
-          justifyContent: "center"
+          marginBottom: 5,
+          justifyContent: "center",
+          flexDirection: 'row',
+          flexGrow: 1,
+          paddingLeft: 3,
+          paddingRight: 3
         }}
       >
         <Image
           source={{ uri: props.image.url }}
-          style={{ width: props.image.width, height: props.image.height }}
+          style={{ minWidth: props.image.width, height: props.image.height, marginRight: 5}}
         />
-        <Text>{props.title}</Text>
+        <Text style={{flex: 1, flexWrap: 'wrap'}}>{props.title}</Text>
       </View>
     </TouchableHighlight>
   );

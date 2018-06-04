@@ -1,0 +1,31 @@
+[debug] [2018-05-28T21:31:10.794Z] ----------------------------------------------------------------------
+[debug] [2018-05-28T21:31:10.798Z] Command:       /Users/sf/.nvm/versions/node/v6.11.5/bin/node /Users/sf/.nvm/versions/node/v6.11.5/bin/firebase functions:shell
+[debug] [2018-05-28T21:31:10.799Z] CLI Version:   3.18.5
+[debug] [2018-05-28T21:31:10.799Z] Platform:      darwin
+[debug] [2018-05-28T21:31:10.799Z] Node Version:  v6.11.5
+[debug] [2018-05-28T21:31:10.800Z] Time:          Tue May 29 2018 00:31:10 GMT+0300 (+03)
+[debug] [2018-05-28T21:31:10.800Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-28T21:31:10.821Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-28T21:31:10.822Z] > authorizing via signed-in user
+[debug] [2018-05-28T21:31:10.828Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/kindtube-f4fcb  
+  
+ Tue May 29 2018 00:31:10 GMT+0300 (+03)
+[debug] [2018-05-28T21:31:11.927Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-28T21:31:11.928Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/kindtube-f4fcb/tokens  
+  
+ Tue May 29 2018 00:31:11 GMT+0300 (+03)
+[debug] [2018-05-28T21:31:12.742Z] <<< HTTP RESPONSE 200
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-05-28T21:31:13.378Z] Fetching environment
+[debug] [2018-05-28T21:31:13.380Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/kindtube-f4fcb  
+  
+ Tue May 29 2018 00:31:13 GMT+0300 (+03)
+[debug] [2018-05-28T21:31:14.380Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-28T21:31:14.381Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/535955312895:getServerAppConfig  
+  
+ Tue May 29 2018 00:31:14 GMT+0300 (+03)
+[debug] [2018-05-28T21:31:15.014Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-28T21:31:15.014Z] Starting @google-cloud/functions-emulator
+[debug] [2018-05-28T21:31:16.580Z] Parsing function triggers
+[info] ✔  functions: addMessage
